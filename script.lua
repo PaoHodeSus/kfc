@@ -1,4 +1,3 @@
--- Simple Loader GUI (No Key System)
 local gui = Instance.new("ScreenGui")
 local frame = Instance.new("Frame")
 local title = Instance.new("TextLabel")
@@ -29,7 +28,6 @@ loadButton.Font = Enum.Font.Gotham
 loadButton.TextScaled = true
 loadButton.Parent = frame
 
--- เมื่อกดปุ่ม จะโหลดสคริปต์หลักจาก GitHub/Pastebin
 loadButton.MouseButton1Click:Connect(function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/main.lua"))()
 end)
